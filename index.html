@@ -18,7 +18,7 @@
     <title>Arsham</title>
 </head>
 
-<body>
+<body >
     <!-- TOP NAVBAR -->
     <div class="darkoverlay" style="display: none"></div>    
     <div class="topnav">
@@ -37,6 +37,8 @@
                         <a class="nav-icons" href="#proj"><img src="/assets/images/p.svg"></a>
                         <a class="nav-icons" href="#contact"><img src="/assets/images/co.svg"></a>
                     <!-- </div> -->
+
+                    
                 </div>
     </div>
     
@@ -345,16 +347,17 @@
         // })
 
         $(".burger").on('click', function(){
-            $("#myLinks").slideToggle();
-            $('.darkoverlay').slideToggle()
-            // if($('#mylink').css('display') =='block'){
-            //     // $('.darkoverlay').removeClass('d-none').addClass('d-block')
-            //     $('body').css('overflow', 'hidden')
-            // }
-            // else{
-            //     // $('.darkoverlay').removeClass('d-block').addClass('d-none')
-            //     $('body').css('overflow', 'visible')
-            // }
+            let status = $("#myLinks").css('display')
+            if(status === 'block'){
+                $(".darkoverlay").fadeOut('fast')
+                $("#myLinks").slideUp()
+                $('body').css('overflow','visible');
+            }
+            else{
+                $(".darkoverlay").fadeIn('fast')
+                $("#myLinks").slideDown()
+                $('body').css('overflow','hidden');
+            }
         })
     </script>
 <script>

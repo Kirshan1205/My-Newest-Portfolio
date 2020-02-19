@@ -24,7 +24,7 @@
     <div class="topnav">
         <a href="#home" class="logo"><img src="assets/images/my logo.png"></a>
         <a width="50%" href="javascript:void(0);" class="icon">
-                <img src="assets/images/bger.svg" class="burger">
+                <img src="assets/images/bger.svg" class="burger rotate">
             </a>
             <div id="myLinks" style="height: 92%; top: 63px; background: linear-gradient(to right, #0e0e0e, rgb(19, 19, 19));">
                     
@@ -281,8 +281,9 @@
         <a class="pleasehireme" href="#linktocontactform"></a>
     </div>
     <!-- CONTACT -->
-    <div class="contacts" id="contact">
-        <h1 class="contacttitle" style="margin-bottom:-0.65%;">contact</h1>
+
+    <div style="display:table-row;">
+    <h1 class="contacttitle" style="margin-bottom:-0.65%;">contact</h1>
         <div class="contact" style="position: relative">
             <img class="bob contactimage" src="assets/images/cardresp.svg">
             <div class="map " style="text-align: center; transition: all 1s ease;position:relative;">
@@ -295,6 +296,9 @@
             </div>
         </div>
     </div>
+    <!-- <div class="contacts" id="contact">
+        
+    </div> -->
     <!-- FOOTER -->
     <!-- <div class="myfooter">
         <div class="blah">
@@ -332,6 +336,9 @@
             }, 'fast')
             return false
         })
+        $(".rotate").click(function () {
+    $(this).toggleClass("down");
+})
     </script>
 
     <script>

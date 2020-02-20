@@ -25,6 +25,10 @@ body {
     width: 100%;
 }
 
+a:hover{
+    cursor: url('/assets/images/darkcyan.png'), auto ;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -769,4 +773,12 @@ img {
     -moz-transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
     transform:rotate(180deg);
+}
+
+.newfooter{
+    background-color:#f9cc14;
+    width: 100%;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
 }

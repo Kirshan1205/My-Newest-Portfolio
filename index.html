@@ -88,7 +88,7 @@
 
     <!-- HOME -->
     <div class="container-fluid p-0 pt-5 mt-1" id="home">
-        <img style="margin-top:-2%;" class="mainimageplease" src="assets/images/pleasework.svg">
+        <img style="margin-top:-2%;" class="mainimageplease pleasework" src="assets/images/pleasework.svg">
     </div>
     <!-- ABOUT ME -->
     <div class="aboutme" id="aboutme">
@@ -155,31 +155,25 @@
                     
 
                 <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4">
+                    <div class="cardhover"></div>
                     <a href="" class="fancybox" rel="ligthbox">
-                        <img  src="assets/images/eniacattackproj.svg" class="zoom img-fluid "  alt="">
+                        <img  style="  position: relative;" src="assets/images/eniacattackproj.svg" class="zoom img-fluid "  alt="">
                        
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4">
+                        <div class="cardhover"></div>
                     <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
-                        <img  src="assets/images/KCafe.jpg" class="zoom img-fluid"  alt="">
+                        <img  style="  position: relative;" src="assets/images/KCafe.jpg" class="zoom img-fluid "  alt="">
                     </a>
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4">
+                        <div class="cardhover"></div>
                     <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                        <img  src="assets/images/minecrafticonnew.svg" class="zoom img-fluid "  alt="">
+                        <img  style="  position: relative;" src="assets/images/minecrafticonnew.svg" class="zoom img-fluid "  alt="">
                     </a>
                 </div>
-                
-                
-                
-              
-                
-                
-               
-               
-                
            </div>
            <div class="row justify-content-lg-center">
                 <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4 ">
@@ -282,20 +276,6 @@
     </div>
     <!-- CONTACT -->
 
-    <div style="display:table-row;">
-    <h1 class="contacttitle" style="margin-bottom:-0.65%;">contact</h1>
-        <div class="contact" style="position: relative">
-            <img class="bob contactimage" src="assets/images/cardresp.svg">
-            <div class="map " style="text-align: center; transition: all 1s ease;position:relative;">
-                <img class="pixmap" style="width:68%; " src="assets/images/pixmap.svg">
-                <img src="assets/images/mark.svg" class="jump" style="position: absolute;width:10%;top:40%;left:63.3%;">
-            </div>
-            <div class="cardslide"
-                style="position: absolute; width: 25%; right:0; top:17.5%; transform: translateX(100%)">
-                <img src="assets/images/updatedslidercard.svg" style="width:120%">
-            </div>
-        </div>
-    </div>
     <!-- <div class="contacts" id="contact">
         
     </div> -->
@@ -311,6 +291,36 @@
         </div>
         <p class="footertext">Arsham&#169; 2020</p>
     </div> -->
+
+    
+    <div style="display:table-row; position: static;" class="omg">
+    
+            <div class="contact" style="position: relative">
+                    <h1 class="contacttitle" style="margin-bottom:-0.65%;">contact</h1>
+                <img class="bob contactimage" src="assets/images/cardresp.svg">
+                <div class="map " style="text-align: center; transition: all 1s ease;position:relative;">
+                    <img class="pixmap" style="width:68%; " src="assets/images/pixmap.svg">
+                    <img src="assets/images/mark.svg" class="jump" style="position: absolute;width:10%;top:40%;left:63.3%;">
+                </div>
+                <div class="cardslide"
+                    style="position: absolute; width: 25%; right:0; top:17.5%; transform: translateX(100%)">
+                    <img src="assets/images/updatedslidercard.svg" style="width:120%">
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid newfooter">
+                <div class="">
+                        <a href="#"><img class="social" style="width:70px;height:70px;" src="assets/images/githubsocial.svg"></a>
+                        <a href="#"><img class="social" style="width:70px;height:70px;" src="assets/images/instasocial.svg"></a>
+                        <a href="#"><img class="social" style="width:70px;height:70px;" src="assets/images/facebooksocial.svg"></a>
+                        <a href="#"><img class="social" style="width:80px;height:80px;" src="assets/images/linkedinsocial.svg"></a>
+                        <a href="https://stackoverflow.com/users/8448761/arsham"><img class="social" style="width:80px;height:80px;"
+                                src="assets/images/stackoverflowicon.svg"></a>
+                    </div>
+                    <p class="footertext">Arsham&#169; 2020</p>
+            </footer>
+        
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -378,7 +388,8 @@ $(document).ready(function(){
         }
 
     })
-})</script>
+})
+</script>
 
 </body>
 

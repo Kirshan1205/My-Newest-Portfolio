@@ -782,3 +782,17 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+footer {
+    background-color: rgba(0, 0, 0, 0.24);
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}

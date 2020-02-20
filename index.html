@@ -176,14 +176,14 @@
                 </div>
            </div>
            <div class="row justify-content-lg-center">
-                <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4 ">
+                <!-- <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4 ">
                     
                         <a href="" class="fancybox" rel="ligthbox">
                             <img  src="assets/images/racinggameicon.svg" class="zoom img-fluid "  alt="">
                         </a>
 
 
-                    </div>
+                    </div> -->
                     
                      <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4">
                         <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
@@ -308,7 +308,7 @@
                 </div>
             </div>
         </div>
-        <footer class="container-fluid newfooter">
+        <!-- <footer class="container-fluid newfooter">
                 <div class="">
                         <a href="#"><img class="social" style="width:70px;height:70px;" src="assets/images/githubsocial.svg"></a>
                         <a href="#"><img class="social" style="width:70px;height:70px;" src="assets/images/instasocial.svg"></a>
@@ -319,7 +319,21 @@
                     </div>
                     <p class="footertext">Arsham&#169; 2020</p>
             </footer>
-        
+
+            
+         -->
+
+         <footer style="display:none;">
+            <div class="blah">
+                <a href="#"><img class="social" style="margin-top:4px; width:60px;height:60px;" src="assets/images/githubsocial.svg"></a>
+                <a href="#"><img class="social"  style="margin-top:4px; width:60px;height:60px;" src="assets/images/instasocial.svg"></a>
+                <a href="#"><img class="social"  style="margin-top:4px; width:60px;height:60px;" src="assets/images/facebooksocial.svg"></a>
+                <a href="#"><img class="social"  style="margin-top:4px; width:60px;height:60px;" src="assets/images/linkedinsocial.svg"></a>
+                <a href="https://stackoverflow.com/users/8448761/arsham"><img class="social"  style="margin-top:4px; width:60px;height:60px;"
+                        src="assets/images/stackoverflowicon.svg"></a>
+            </div>
+    
+        </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -389,6 +403,59 @@ $(document).ready(function(){
 
     })
 })
+// window.addEventListener("scroll", function (event) {
+//     var scroll = window.scrollY;
+    
+//     if(scroll >= 100){
+//             $("footer").slideUp();
+            
+//             $("footer").css({"display":"block"});
+        
+//     }
+//     else{
+//         $("footer").css({"display":"none"});
+        
+//     }
+// });
+$(window).scroll(function(event) {
+	function footer()
+    {
+        var scroll = $(window).scrollTop(); 
+        var sc = window.scrollY;
+        if(scroll > 180)
+        { 
+            $("footer").slideDown("slow").addClass("show");
+        }
+        else
+        {
+            $("footer").slideUp("slow").removeClass("show");
+        }
+
+        if(scrollY >= 5000)
+        { 
+            
+            $("footer").css("background-color","#f9cc14");
+            
+        }
+        else
+        {
+            $("footer").css("background-color","rgba(0, 0, 0, 0.24)");
+        }
+        
+        // clearTimeout($.data(this, 'scrollTimer'));
+        // $.data(this, 'scrollTimer', setTimeout(function() {
+        //     if ($("footer").is(':hover')) {
+	    //     	footer();
+    	// 	}
+        //     else
+        //     {
+        //     	$("footer").fadeOut("slow");
+        //     }
+		// }, 2000));
+    }
+    footer();
+});
+
 </script>
 
 </body>

@@ -796,3 +796,57 @@ footer {
     align-items: center;
     margin:auto;
 }
+
+/* .overlaying:hover{
+ 
+        position: relative ;
+        width: 500px !important; 
+        height: 500px !important;
+        background: #007AE0 !important;
+        z-index: 100000000000000000000 !important;
+    } */
+
+
+
+      
+      .full, .half, .half2 {
+        background-size: cover;
+        position: relative;
+      }   
+      
+      .full:hover .overlay-effect, .half:hover .overlay-effect, .half2:hover .overlay-effect {
+        opacity: 1;
+        cursor: pointer;
+      }
+      
+      .overlay-effect {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: .5s ease;
+        z-index: 1;
+        background: #f9cc14;
+        transform: translate(10px, 10px);
+        
+        transition: transform 0.1s ease-in-out;
+        overflow:hidden;
+      }
+      
+      .full a,
+      .half a,
+      .half2 a {
+        color: #fff;
+      }
+      
+      .full h3,
+      .half h3,
+      .half2 h3 {
+        padding: 15px 30px;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .full, .half, .half2 {margin-bottom: 10px;}
+      }

@@ -156,23 +156,32 @@
 
                 <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4">
                     <div class="cardhover"></div>
-                    <a href="" class="fancybox" rel="ligthbox">
+                    <div class="full w-100">
+                            <div class="overlay-effect h-100 w-100"></div>
+                    <a href="https://github.com/arsham10/Eniac-Attack" class="fancybox" rel="ligthbox">
                         <img  style="  position: relative;" src="assets/images/eniacattackproj.svg" class="zoom img-fluid "  alt="">
                        
                     </a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4">
                         <div class="cardhover"></div>
-                    <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
+                        <div class="full w-100">
+                                <div class="overlay-effect h-100 w-100"></div>
+                    <a href="https://github.com/arsham10/K-Cafe"  class="fancybox" rel="ligthbox">
                         <img  style="  position: relative;" src="assets/images/KCafe.jpg" class="zoom img-fluid "  alt="">
                     </a>
+                    </div>
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4">
                         <div class="cardhover"></div>
-                    <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+                        <div class="full w-100">
+                                <div class="overlay-effect h-100 w-100"></div>
+                    <a href="https://github.com/arsham10/Kidocode-Minecraft-Mod" class="fancybox" rel="ligthbox">
                         <img  style="  position: relative;" src="assets/images/minecrafticonnew.svg" class="zoom img-fluid "  alt="">
                     </a>
+                    </div>
                 </div>
            </div>
            <div class="row justify-content-lg-center">
@@ -185,10 +194,14 @@
 
                     </div> -->
                     
-                     <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4">
-                        <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+                     <div class="col-lg-4 col-md-4 col-xs-12 thumb mb-4 ">
+                         <!-- <div class="overlaying"></div> -->
+                         <div class="full w-100">
+                         <div class="overlay-effect h-100 w-100"></div>
+                        <a href="https://github.com/arsham10/Sci-Time" class="fancybox " rel="ligthbox">
                             <img  src="assets/images/newgameicon.svg" class="zoom img-fluid "  alt="">
                         </a>
+                    </div>
                     </div>
            </div>
          
@@ -323,7 +336,7 @@
             
          -->
 
-         <footer style="display:none;">
+         <footer style="display:none; z-index:1000000000000000000000;">
             <div class="blah">
                 <a href="#"><img class="social" style="margin-top:4px; width:60px;height:60px;" src="assets/images/githubsocial.svg"></a>
                 <a href="#"><img class="social"  style="margin-top:4px; width:60px;height:60px;" src="assets/images/instasocial.svg"></a>
@@ -424,23 +437,23 @@ $(window).scroll(function(event) {
         var sc = window.scrollY;
         if(scroll > 180)
         { 
-            $("footer").slideDown("slow").addClass("show");
+            $("footer").slideDown("fast").addClass("show");
         }
         else
         {
-            $("footer").slideUp("slow").removeClass("show");
+            $("footer").slideUp("fast").removeClass("show");
         }
 
-        if(scrollY >= 5000)
-        { 
+        // if(scrollY >= 5000)
+        // { 
             
-            $("footer").css("background-color","#f9cc14");
+        //     $("footer").css("background-color","#f9cc14");
             
-        }
-        else
-        {
-            $("footer").css("background-color","rgba(0, 0, 0, 0.24)");
-        }
+        // }
+        // else
+        // {
+        //     $("footer").css("background-color","rgba(0, 0, 0, 0.24)");
+        // }
         
         // clearTimeout($.data(this, 'scrollTimer'));
         // $.data(this, 'scrollTimer', setTimeout(function() {

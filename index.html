@@ -239,14 +239,14 @@
 
 
     <!-- HIRE -->
-    <div class="hire " style="margin-top:6%;">
+    <!-- <div class="hire " style="margin-top:6%;">
         <img style="margin-bottom:6%;" src="assets/images/pls.svg">
         <a class="pleasehireme" href="#linktocontactform"></a>
-    </div>
+    </div> -->
 
          <footer style="display:none; z-index:1000000000000000000000;">
             <div class="blah">
-                <a href="#"><img class="social" style="margin-top:4px; width:60px;height:60px;" src="assets/images/githubsocial.svg"></a>
+                <a href="https://github.com/arsham10"><img class="social" style="margin-top:4px; width:60px;height:60px;" src="assets/images/githubsocial.svg"></a>
                 <a href="#"><img class="social"  style="margin-top:4px; width:60px;height:60px;" src="assets/images/instasocial.svg"></a>
                 <a href="#"><img class="social"  style="margin-top:4px; width:60px;height:60px;" src="assets/images/facebooksocial.svg"></a>
                 <a href="#"><img class="social"  style="margin-top:4px; width:60px;height:60px;" src="assets/images/linkedinsocial.svg"></a>
@@ -340,6 +340,7 @@ $(window).scroll(function(event) {
 	function footer()
     {
         var scroll = $(window).scrollTop(); 
+        // var scrollBot = $(window).scrollBottom(); 
         var sc = window.scrollY;
         if(scroll > 180)
         { 
@@ -350,7 +351,6 @@ $(window).scroll(function(event) {
             $("footer").slideUp("fast").removeClass("show");
         }
 
- 
     }
     footer();
 });

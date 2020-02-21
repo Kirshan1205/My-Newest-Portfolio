@@ -812,11 +812,13 @@ footer {
       .full, .half, .half2 {
         background-size: cover;
         position: relative;
+        cursor: url('/assets/images/darkcyan.png'), auto ;
       }   
       
       .full:hover .overlay-effect, .half:hover .overlay-effect, .half2:hover .overlay-effect {
         opacity: 1;
         cursor: pointer;
+        cursor: url('/assets/images/darkcyan.png'), auto ;
       }
       
       .overlay-effect {
@@ -830,6 +832,7 @@ footer {
         z-index: 1;
         background: #f9cc14;
         transform: translate(10px, 10px);
+        /* cursor: url('/assets/images/darkcyan.png'), auto ; */
         
         transition: transform 0.1s ease-in-out;
         overflow:hidden;
@@ -839,6 +842,7 @@ footer {
       .half a,
       .half2 a {
         color: #fff;
+        
       }
       
       .full h3,
@@ -849,4 +853,36 @@ footer {
       
       @media screen and (max-width: 768px) {
         .full, .half, .half2 {margin-bottom: 10px;}
+        
       }
+
+      .gallery-card-title{
+          font-size:20px;
+          justify-content: left;
+          text-align: left;
+          color:black;
+          font-family: 'Montserrat'
+          
+      }
+
+
+      .gallery-card-body{
+        font-size:16px;
+        justify-content: left;
+        text-align: left;
+        color:black;
+        font-family: 'Montserrat'
+        
+    }
+
+    .gallery-card-padding{
+        padding:5%;
+    }
+/* 
+    .see_more_button{
+        
+        
+        background: url(") 3px 5px no-repeat;
+
+
+    } */

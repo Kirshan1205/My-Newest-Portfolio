@@ -12,6 +12,12 @@ html {
     cursor: url('../images/darkcyanc.png'), auto;
 }
 
+
+
+.phone_contact{
+    display:none;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -530,6 +536,8 @@ html {
     overflow: hidden;
 }
 
+
+
 .rotating {
     transform-origin: center;
     transform-box: fill-box;
@@ -640,6 +648,11 @@ kes the two columns stack on top of each other instead of next to each other */
 
 
 @media screen and (max-width: 600px) {
+
+    .phone_contact{
+        display: block !important;
+        z-index: 10000000000000000000000000000;
+    }
     .contact{
         display:none;
     }

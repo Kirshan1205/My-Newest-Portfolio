@@ -818,7 +818,7 @@ footer {
       .full:hover .overlay-effect, .half:hover .overlay-effect, .half2:hover .overlay-effect {
         opacity: 1;
         cursor: pointer;
-        cursor: url('/assets/images/darkcyan.png'), auto ;
+        cursor: url('/assets/images/darkcyanc.png'), auto ;
       }
       
       .overlay-effect {

@@ -648,8 +648,23 @@ kes the two columns stack on top of each other instead of next to each other */
 }
 
 @media screen and (max-width: 1024px) {
+    .blah{
+        display: none;
+    }
+
+    footer{
+        background-color:transparent !important;
+    }
+
+
+    .tablet-contact{
+    
+        display:block !important;
+    }
+
     .map{
         display:none;
+        
     }
     change-in-ipad{
         height: 50% !important;
@@ -993,4 +1008,8 @@ a .logo {
     width:10%px;
     height:5%px;
     display:flex;
+}
+
+.tablet-contact{
+    display:none;
 }

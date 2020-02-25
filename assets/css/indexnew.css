@@ -467,6 +467,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .shatterfooter {
@@ -646,6 +647,23 @@ kes the two columns stack on top of each other instead of next to each other */
 
 }
 
+@media screen and (max-width: 1024px) {
+    .map{
+        display:none;
+    }
+    change-in-ipad{
+        height: 50% !important;
+        margin: 5%;
+    }
+    .topnav {
+        display: block !important;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+}
 
 @media screen and (max-width: 600px) {
 
@@ -970,3 +988,9 @@ a .logo {
     margin-top:20%;
 }
 
+.cvbutton{
+    background-color:white;
+    width:10%px;
+    height:5%px;
+    display:flex;
+}

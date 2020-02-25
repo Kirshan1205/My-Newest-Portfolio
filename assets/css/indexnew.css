@@ -9,9 +9,13 @@
 }
 
 html {
-    cursor: url('../images/darkcyanc.png'), auto;
+    cursor: url('../images/darkcyanc.png'), auto !important;
 }
 
+
+.hovermouse{
+    cursor: url('../images/darkcyanc.png'), auto !important;
+}
 
 
 .phone_contact{
@@ -419,6 +423,7 @@ html {
     -moz-transition: opacity 100ms ease-in;
     transition: opacity 100ms ease-in;
     pointer-events: none;
+    overflow-y: hidden;
 }
 
 .modalDialog:target {
@@ -433,6 +438,7 @@ html {
     margin: 10% auto;
     padding: 20px;
     border-radius: 3px;
+    overflow: hidden;
 }
 
 .close {
@@ -681,7 +687,9 @@ kes the two columns stack on top of each other instead of next to each other */
 }
 
 @media screen and (max-width: 600px) {
-
+    .bookmodal {
+        background-image: url('..assets/images/note.png') !important;
+    }
     .phone_contact{
         display: block !important;
         z-index: 10000000000000000000000000000;
@@ -872,6 +880,7 @@ background: linear-gradient(to right, #000000, #1d1d1d); /* W3C, IE 10+/ Edge, F
     /* display: flex; */
     flex-wrap: nowrap;
     justify-content: center;
+    margin-top: 45rem;
 }
 
 .cardslide {
@@ -893,13 +902,15 @@ background: linear-gradient(to right, #000000, #1d1d1d); /* W3C, IE 10+/ Edge, F
 }
 
 .bookmodal {
-    background-image: url('../images/newnewnew.svg');
+    background-image: url('../images/bookwithouthint.png');
     top: -12.5%;
     width: 100%;
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     overflow-y: hidden;
+    overflow: hidden;
+    
 }
 
 .skillhover1:hover {

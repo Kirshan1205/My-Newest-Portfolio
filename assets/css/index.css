@@ -838,9 +838,9 @@ footer {
       }
 
       .gallery-card-title{
-          font-size:20px;
-          justify-content: left;
-          text-align: left;
+          font-size:30px;
+          justify-content: center;
+          text-align: center;
           color:black;
           font-family: 'Montserrat'
           

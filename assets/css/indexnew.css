@@ -649,6 +649,10 @@ kes the two columns stack on top of each other instead of next to each other */
 }
 
 @media screen and (max-width: 1024px) {
+    .bookmodal{
+        margin-top: 20% !important;
+    }
+    
     .polygon2, .polygon3, .polygon4, .polygon5, .polygon6{
         width: 10% !important;
         position: absolute;
@@ -691,6 +695,10 @@ kes the two columns stack on top of each other instead of next to each other */
 }
 
 @media screen and (max-width: 600px) {
+    .note{
+        display:block !important;
+    }
+
     .polygon2, .polygon3, .polygon4, .polygon5, .polygon6{
         width: 15% !important;
         position: absolute;
@@ -957,6 +965,11 @@ background: linear-gradient(to right, #000000, #1d1d1d); /* W3C, IE 10+/ Edge, F
     background-repeat: no-repeat;
     overflow-y: hidden;
     overflow: hidden;
+    height: 100%;
+    display: flex;
+    
+    place-content: center;
+    
     
 }
 

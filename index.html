@@ -29,7 +29,7 @@
   <body>
     <!-- TOP NAVBAR -->
     <div class="darkoverlay" style="display: none"></div>
-    <div class="topnav">
+    <div class="topnav" style="z-index: 1999;">
       <a href="#home" class="logo"><img src="assets/images/my logo.png"/></a>
       <a width="50%" href="javascript:void(0);" class="icon">
         <img src="assets/images/bger.svg" class="burger rotate" />
@@ -129,7 +129,7 @@
             />
           </div>
           <div class="abovenew">
-            <a href="#openModal-about"
+            <a id="check" href="#openModal-about"
               ><img class="" width="100%" src="assets/images/booknew.svg"
             /></a>
             <img
@@ -139,6 +139,7 @@
             />
             <div id="openModal-about" class="modalDialog">
               <div class="bookmodal">
+                  <img  class="note" src="assets/images/noteplease.svg" style="display:none; width:100%;">
                 <a href="#close" title="Close" class="close hover-mouse"></a>
               </div>
             </div>
@@ -464,6 +465,13 @@
         $(".darkoverlay").fadeOut("fast");
           $("#myLinks").slideUp();
           $("body").css("overflow", "visible");
+      });
+
+      $("#check").on("click", function() {
+            $("body").css("overflow", "hidden");
+      });
+      $("#openModal-about").on("click", function() {
+            $("body").css("overflow", "visible");
       });
     </script>
 

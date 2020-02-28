@@ -753,6 +753,7 @@ kes the two columns stack on top of each other instead of next to each other */
     }
     .phone_contact{
         display: block !important;
+        margin-bottom:0rem !important;
         z-index: 1000000000000000000000;
     }
     .contact{

@@ -45,6 +45,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+
 }
 
 
@@ -311,6 +312,7 @@ img {
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 .about-images {
@@ -692,6 +694,21 @@ kes the two columns stack on top of each other instead of next to each other */
         display:none;
     }
 
+}
+
+@media (hover: hovs) {
+    .hovs:hover{
+        transform: scale(1.01) !important;
+        position: relative !important;
+    }
+ }
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 800px;
+    }
+
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -1167,3 +1184,8 @@ section{
     }
 }
 
+
+
+.testsvg svg {
+    fill:red;
+}

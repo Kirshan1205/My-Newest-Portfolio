@@ -68,7 +68,9 @@
     </div>
     <nav class="navbar navbar-expand-sm  fixed-bottom">
       <div class="logo">
+        <a id="drop">
         <img alt="nothing" src="assets/images/my logo.png" />
+      </a>
       </div>
       <ul class="navbar-nav">
         <li class="navv nav-link nav-item">
@@ -112,9 +114,9 @@
 
     <!-- HOME -->
     <section>
-      <div class="container-fluid p-0 pt-5 mt-1" id="home">
+      <div class=" container-fluid p-0 pt-5 mt-1" id="home">
         <img alt="nothing"
-          class="mainimageplease pleasework"
+          class="mainimageplease pleasework "
           src="assets/images/finalfinaltopnav.svg"
         />
       </div>
@@ -177,15 +179,15 @@
     <!-- SKILLS -->
     <section>
       <div class="container">
-        <h1 id="myskills" class="sectiontitle mb-5">My skills</h1>
+        <h1 id="myskills" class="sectiontitle mb-5 obx">My skills</h1>
         <div class="services-container" style="color:white;">
-          <div class=" skillhover1">
+          <div class=" skillhover1 box">
             <img alt="nothing" class="" src="assets/images/gameskill.svg" />
           </div>
-          <div class=" skillhover2">
+          <div class=" skillhover2 box">
             <img alt="nothing" class="" src="assets/images/webskill.svg" />
           </div>
-          <div class=" skillhover3">
+          <div class=" skillhover3 box">
             <img alt="nothing" class="" src="assets/images/DesignCard.svg" />
           </div>
         </div>
@@ -195,23 +197,35 @@
     <!-- SERVICES -->
     <section>
       <div class="container" id="services">
-        <h1 class="sectiontitle mb-5">Services</h1>
-        <div class="services-container" style="color:white;">
-          <div style="height:100%;" class="bg1 hovs">
+        <h1 class="sectiontitle mb-5 box">Services</h1>
+        <div class="services-container " style="color:white;">
+          <div style="height:100%;" class="bg1 hovs box">
             <!-- <img alt="nothing" class="shatter" src="assets/images/shatter.svg" /> -->
-            <img alt="nothing" class="paddingpls" src="assets/images/web_info.svg" />
+            <img alt="nothing" class="paddingpls  box" src="assets/images/web_info.svg" />
           </div>
-          <div style="height:100%;" class="bg2 hovs">
-            <img alt="nothing" class="paddingpls" src="assets/images/game_info.svg" />
+          <div style="height:100%;" class="bg2 hovs box">
+            <img alt="nothing" class="paddingpls box" src="assets/images/game_info.svg" />
           </div>
-          <div style="height:100%;" class="bg3 hovs">
+          <div style="height:100%;" class="bg3 hovs box">
             <!-- <img alt="nothing" class="shatterbottom" src="assets/images/shatter.svg" /> -->
-            <img alt="nothing" class="paddingpls" src="assets/images/design_info.svg" />
+            <img alt="nothing" class="paddingpls box" src="assets/images/design_info.svg" />
           </div>
         </div>
       </div>
     </section>
 
+    <!-- <section>
+        <div class=" container-fluid p-0 pt-5 mt-1">
+            <h1 class="sectiontitle mb-5 box">Try out my game</h1>
+          <img alt="nothing"
+            class="mainimageplease pleasework "
+            style="height:80%;"
+            src="assets/images/pop.svg"
+          />
+        </div>
+        <div class="game"></div>
+      </section>
+   -->
     <!-- Projects -->
     <section>
       <div class=" page-top mb-5 change-in-ipad" style="margin: 5%;" id="proj">
@@ -562,6 +576,68 @@
           var div = document.getElementyById('#button');
           div.style.display = 'none';
       }
+
     </script>
+    <!-- <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+    <script>
+    
+          //listen to shake event
+          var shakeEvent = new Shake({threshold: 15});
+    shakeEvent.start();
+    window.addEventListener('shake', function(){
+        alert("Shaked");
+    }, false);
+
+    //stop listening
+    function stopShake(){
+        shakeEvent.stop();
+    }
+
+    //check if shake is supported or not.
+    if(!("ondevicemotion" in window)){
+      alert('popopo')
+    }</script>
+     -->
+
+     <!-- 
+     -->
+
+     <script src="http://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js" type="text/javascript"></script> 
+     <script src="assets/JS/MK.js" type="text/javascript"></script> 
+     <script src="assets/JS/phaser.min.js" type="text/javascript"></script> 
+     
+<!-- 
+      <script>
+     $(".container").throwable({
+                        containment:[0,0,500,500],
+                        drag:true,
+                        gravity:{x:0,y:0},
+                        impulse:{
+                            f:52,
+                            p:{x:1,y:1}
+                        },
+                        shape:"circle",
+                        autostart:false,
+                        bounce:0.5,
+                        damping:100,
+                        areaDetection:[[0,0,300,300]],
+                        collisionDetection: true
+                    });</script> -->
+                    <!-- <script>
+                      $("#drop").on('click', function () {
+                        console.log("my name is jeff");
+                        $(".box").throwable(
+                            {
+                                impulse: {
+                                    f: 52,
+                                    p: { x: -100, y: 100 }
+                                },
+                                gravity: {
+                                    x: 0,
+                                    y: 1
+                                }
+                            });
+                      });
+                    </script> -->
   </body>
 </html>

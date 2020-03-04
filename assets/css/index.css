@@ -209,7 +209,7 @@ h1.skilltitle {
 .bg1 {
     background-color: #F9CC14;
     display: flex;
-    transition: all .2s ease-in-out;
+    /* transition: all .2s ease-in-out; */
     position: relative;
 }
 
@@ -217,14 +217,14 @@ h1.skilltitle {
     background-color: #007AE0;
     display: flex;
     padding: 10%;
-    transition: all .2s ease-in-out;
+    /* transition: all .2s ease-in-out; */
     position: relative;
 }
 
 .bg3 {
     background-color: #F9CC14;
     display: flex;
-    transition: all .2s ease-in-out;
+    /* transition: all .2s ease-in-out; */
     position: relative;
 }
 

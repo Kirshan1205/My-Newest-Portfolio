@@ -28,7 +28,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     
     <meta name="theme-color" content="#f9cc14">
+    <link rel="icon" sizes="192x192" href="assets/images/my logo.png">
 <meta name="msapplication-navbutton-color" content="#f9cc14">
+<meta name="msapplication-TileColor" content="#f9cc14">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f9cc14">
     
     
@@ -105,20 +107,26 @@
       
         
 
-      <img alt="nothing" class="polygon2" src="assets/images/triangle_polygon.svg" />
-      <img alt="nothing" class="polygon3" src="assets/images/square_polygon.svg" />
-      <img alt="nothing" class="polygon4" src="assets/images/pentagon_polygon.svg" />
-      <img alt="nothing" class="polygon5" src="assets/images/heptagon_polygon.svg" />
-      <img alt="nothing" class="polygon6" src="assets/images/octagon_polygon.svg" />
+      <img style="z-index:1000000000000000000;" alt="nothing" class="polygon2" src="assets/images/triangle_polygon.svg" />
+      <img style="z-index:1000000000000000000;" alt="nothing" class="polygon3" src="assets/images/square_polygon.svg" />
+      <img style="z-index:1000000000000000000;" alt="nothing" class="polygon4" src="assets/images/pentagon_polygon.svg" />
+      <img style="z-index:1000000000000000000;" alt="nothing" class="polygon5" src="assets/images/heptagon_polygon.svg" />
+      <img style="z-index:1000000000000000000;" alt="nothing" class="polygon6" src="assets/images/octagon_polygon.svg" />
     </div>
 
     <!-- HOME -->
     <section>
       <div class=" container-fluid p-0 pt-5 mt-1" id="home">
         <img alt="nothing"
-          class="mainimageplease pleasework "
+          class="mainimageplease pleasework"
           src="assets/images/finalfinaltopnav.svg"
         />
+
+      <img alt="nothing" class=" pd1 drag d-none d-xl-block d-lg-block d-md-block" src="assets/images/triangle_polygon.svg" />
+      <img alt="nothing" class=" pd2 drag d-none d-xl-block d-lg-block d-md-block" src="assets/images/square_polygon.svg" />
+      <img alt="nothing" class=" pd3 drag d-none d-xl-block d-lg-block d-md-block" src="assets/images/pentagon_polygon.svg" />
+      <img alt="nothing" class=" pd4 drag d-none d-xl-block d-lg-block d-md-block" src="assets/images/heptagon_polygon.svg" />
+      <img alt="nothing" class=" pd5 drag d-none d-xl-block d-lg-block d-md-block" src="assets/images/octagon_polygon.svg" />
       </div>
     </section>
 
@@ -181,13 +189,13 @@
       <div class="container">
         <h1 id="myskills" class="sectiontitle mb-5 obx">My skills</h1>
         <div class="services-container" style="color:white;">
-          <div class=" skillhover1 box">
+          <div style="width:100%;" class="skillhover1 box">
             <img alt="nothing" class="" src="assets/images/gameskill.svg" />
           </div>
-          <div class=" skillhover2 box">
+          <div style="width:100%;" class="skillhover2 box">
             <img alt="nothing" class="" src="assets/images/webskill.svg" />
           </div>
-          <div class=" skillhover3 box">
+          <div style="width:100%;" class="skillhover3 box">
             <img alt="nothing" class="" src="assets/images/DesignCard.svg" />
           </div>
         </div>
@@ -198,17 +206,41 @@
     <section>
       <div class="container" id="services">
         <h1 class="sectiontitle mb-5 box">Services</h1>
-        <div class="services-container " style="color:white;">
-          <div style="height:100%;" class="bg1 hovs box">
-            <!-- <img alt="nothing" class="shatter" src="assets/images/shatter.svg" /> -->
-            <img alt="nothing" class="paddingpls  box" src="assets/images/web_info.svg" />
+        <!-- <div class="services-container">
+          <div class="col p-0 cards">
+            <div class="bg1 hovs fx box">
+              <img alt="nothing" class="paddingpls" src="assets/images/web_info.svg" />
+            </div>
           </div>
-          <div style="height:100%;" class="bg2 hovs box">
-            <img alt="nothing" class="paddingpls box" src="assets/images/game_info.svg" />
+
+          <div class="col p-0 cards">
+            <div class="bg2 hovs fx box">
+              <img alt="nothing" class="paddingpls" src="assets/images/game_info.svg" />
+            </div>
           </div>
-          <div style="height:100%;" class="bg3 hovs box">
-            <!-- <img alt="nothing" class="shatterbottom" src="assets/images/shatter.svg" /> -->
-            <img alt="nothing" class="paddingpls box" src="assets/images/design_info.svg" />
+
+          <div class="col p-0 cards">
+            <div class="bg3 hovs fx box">
+              <img alt="nothing" class="paddingpls box" src="assets/images/design_info.svg" />
+            </div>
+          </div>
+        </div> -->
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 cards">
+              <div class="bg1 hovs fx box">
+                  <img alt="nothing" class="paddingpls" src="assets/images/web_info.svg" />
+              </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 cards">
+              <div class="bg2 hovs fx box">
+                  <img alt="nothing" class="paddingpls" src="assets/images/game_info.svg" />
+              </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 cards">
+              <div class="bg3 hovs fx box">
+                  <img alt="nothing" class="paddingpls" src="assets/images/design_info.svg" />
+              </div>
           </div>
         </div>
       </div>
@@ -417,8 +449,10 @@
       </div>
     </section>
 
+    
+
     <!-- FOOTER -->
-    <footer class="" style="display:none;">
+    <footer class="" style="display:none;z-index:10000000000000000000000000000;">
       <div class="blah">
           <a href="https://www.youtube.com/channel/UCD5diwRYtCfistiTDdzA40w?view_as=subscriber"
           ><img alt="nothing"
@@ -456,6 +490,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js" type="text/javascript"></script>
 
     <script>
       let map = document.querySelector(".map");
@@ -578,6 +613,45 @@
       }
 
     </script>
+
+    <script>
+      $(".drag").throwable(
+        {   
+            drag: true,
+            // impulse: {
+            //     f: 52,
+            //     p: { x: -100, y: 100 }
+            // },
+            gravity: {
+                x: 0,
+                y: 0
+            }
+        });
+    
+    
+    </script>
+
+    <script>
+    $(".cards").hover(function (e) {
+    let card = $(".cards");
+    card.on('mousemove', function (e) {
+        let x = e.clientX - $(this).offset().left + $(window).scrollLeft();
+        let y = e.clientY - $(this).offset().top + $(window).scrollTop();
+
+        let rY = map(x, 0, $(this).width(), -10, 10);
+        let rX = map(y, 0, $(this).height(), -10, 10);
+
+        $(this).children(".fx").css("transform", "rotateY(" + rY + "deg)" + " " + "rotateX(" + -rX + "deg)");
+    });
+
+    function map(x, in_min, in_max, out_min, out_max) {
+        return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    }
+}, () => $(".cards")
+    .children(".fx")
+    .css("transform", "rotateY(" + 0 + "deg)" + " " + "rotateX(" + 0 + "deg)"))
+    
+    </script>
     <!-- <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
     <script>
     
@@ -603,41 +677,8 @@
      -->
 
      <script src="http://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js" type="text/javascript"></script> 
-     <script src="assets/JS/MK.js" type="text/javascript"></script> 
+     <!-- <script src="assets/JS/MK.js" type="text/javascript"></script>  -->
      <script src="assets/JS/phaser.min.js" type="text/javascript"></script> 
      
-<!-- 
-      <script>
-     $(".container").throwable({
-                        containment:[0,0,500,500],
-                        drag:true,
-                        gravity:{x:0,y:0},
-                        impulse:{
-                            f:52,
-                            p:{x:1,y:1}
-                        },
-                        shape:"circle",
-                        autostart:false,
-                        bounce:0.5,
-                        damping:100,
-                        areaDetection:[[0,0,300,300]],
-                        collisionDetection: true
-                    });</script> -->
-                    <!-- <script>
-                      $("#drop").on('click', function () {
-                        console.log("my name is jeff");
-                        $(".box").throwable(
-                            {
-                                impulse: {
-                                    f: 52,
-                                    p: { x: -100, y: 100 }
-                                },
-                                gravity: {
-                                    x: 0,
-                                    y: 1
-                                }
-                            });
-                      });
-                    </script> -->
   </body>
 </html>

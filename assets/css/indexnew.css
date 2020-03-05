@@ -990,7 +990,7 @@ background: linear-gradient(to right, #000000, #1d1d1d); /* W3C, IE 10+/ Edge, F
     
     
 }
-
+/* 
 .skillhover1:hover {
     content: url('../images/gsc.svg');
     transform: scale(1.05);
@@ -1007,7 +1007,7 @@ background: linear-gradient(to right, #000000, #1d1d1d); /* W3C, IE 10+/ Edge, F
     width: 100%;
     transform: scale(1.08);
     content: url('../images/DesignSkillHover.svg');
-}
+} */
 
 .skillhover1 {
     animation: yo 0.7s linear infinite alternate;

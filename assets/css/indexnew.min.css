@@ -1194,3 +1194,77 @@ svg g .red:hover {
    }
 } */ 
 
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
+
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%) ;
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 0%;
+    }
+  }
+
+
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(0) opacity(1);
+      opacity: 100%;
+    }
+  }
+
+.slidefromtop{
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    
+}
+
+.slidefromleft{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.slidefromleft1{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+
+.slidefromright{
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    
+}
+
+
+.slidefrombottom{
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+    
+}
+
+
+

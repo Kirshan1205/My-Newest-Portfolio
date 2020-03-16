@@ -1152,47 +1152,73 @@ svg g .red:hover {
 	/* transform: rotateX(30deg) rotateY(30deg); */
 }
 
-/* .Container {
+.Container {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     display: flex;
-    margin: 0 auto;
+	margin: 0 auto;
+	overflow: auto hidden;
 }
-.Container .Box {
+ .Box {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
-    width: 100%;
+    /* overflow: auto hidden; */
+	width: 100%;
+	min-height: 100%;
+	padding: 30px;
 }
-.Container .Box .Card {
-    width: 95%;
+ .Box .Card {
+    width: 80%;
     height: auto;
     flex: 0 0 auto;
-    /* cursor: pointer; */
-/* } */
-/* .Container .Box .ONE { */
-    /* background: #f9cc14; */
-/* }
-.Container .Box .TWO {
-    background:#1f7ae0;
+	/* padding-top:15px; */
 }
-.Container .Box .THREE {
-    background: #f9cc14;
+
+.Box img {
+	
+	width: 500px;
 }
-.Container .Box .FOUR {
-    background:#1f7ae0
+ .Box .ONE {
+	background: #f9cc14; 
+	
 }
-.Container .Box .FIVE {
-    background: #f9cc14;
+	 .Box .TWO {
+		background:#1f7ae0;
+	
+	}
+ .Box .THREE {
+	background: #f9cc14;
+	
 }
-.Container .Box .SIX {
-    background:#1f7ae0
+ .Box .FOUR {
+	background:#1f7ae0;
+	
 }
+ .Box .FIVE {
+	background: #f9cc14;
+	
+}
+ .Box .SIX {
+	background:#1f7ae0;
+	margin-right:30px;
+
+}
+.ONE, .TWO, .THREE, .FOUR, .FIVE, .SIX{
+	margin-left:30px;
+	margin-right:30px;
+}
+
+.ONE:hover, .TWO:hover, .THREE:hover, .FOUR:hover, .FIVE:hover, .SIX:hover{
+	transform: scale(1.05);
+	transition: transform 0.1s;
+	
+}
+
 @media (max-width: 500px) {
     .Container {
         width: 100%;
    }
-} */ 
+} 
 
 @keyframes slideInFromTop {
     0% {
@@ -1268,3 +1294,25 @@ svg g .red:hover {
 
 
 
+
+#slides {
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transform: translateX(0);
+  }
+  
+  .slide {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	background-color: #cccccc;
+  }
+  
+  .animate {
+	transition: all .5s ease-out;
+  }
+  

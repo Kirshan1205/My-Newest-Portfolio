@@ -1169,7 +1169,7 @@ svg g .red:hover {
 }
  .Box .Card {
     width: 80%;
-    height: auto;
+    height: 80%;
     flex: 0 0 auto;
 	/* padding-top:15px; */
 }
@@ -1212,6 +1212,15 @@ svg g .red:hover {
 	transform: scale(1.05);
 	transition: transform 0.1s;
 	
+	
+}
+
+.ONE:hover, .THREE:hover, .FIVE:hover{
+	box-shadow: 10px 10px #1f7ae0;
+}
+
+.TWO:hover, .FOUR:hover, .SIX:hover{
+	box-shadow: 10px 10px #f9cc14;
 }
 
 @media (max-width: 500px) {
@@ -1302,6 +1311,7 @@ svg g .red:hover {
 	font-size: 0;
 	transform: translateX(0);
   }
+
   
   .slide {
 	width: 100%;
@@ -1316,3 +1326,24 @@ svg g .red:hover {
 	transition: all .5s ease-out;
   }
   
+
+  .carousel-inner img {
+	width: 40%;
+	height: 40%;
+}
+  
+.draggable {
+	max-width: 500px;
+	overflow: hidden;
+	border: 1px solid red;
+	padding: 10px;
+  }
+  
+  .navvv {
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .navvv a {
+	margin-right: 20px;
+  }

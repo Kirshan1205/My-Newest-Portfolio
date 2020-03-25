@@ -35,6 +35,7 @@ html {
 }
 
 body {
+	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 	background-color: #000;
 	margin: 0;
@@ -358,10 +359,11 @@ html {
 }
 
 @keyframes bob {
-	from {
-		transform: translateY(0)
+	0% {
+		transform: translateY(0px)
 	}
-	to {
+	
+	100% {
 		transform: translateY(10px)
 	}
 }
@@ -657,7 +659,19 @@ body {
 	}
 }
 
+.hobby-container {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(4, 0.5fr);
+	grid-template-rows: auto;
+
+}
+
 @media screen and (max-width:600px) {
+	.services-container {
+		grid-template-columns: repeat(1, 1fr) !important;
+	}
+
     .mgtop{
         margin-top:2rem;
         margin-bottom:2rem;
@@ -1358,4 +1372,10 @@ svg g .red:hover {
 	background: #03446A;
 	color: white;
 	transform: rotateY( 180deg );
+  }
+
+ 
+
+  .hobbycard:hover{
+	animation: bob 1s infinite forwards alternate ease-in-out;
   }

@@ -668,6 +668,11 @@ body {
 }
 
 @media screen and (max-width:600px) {
+
+
+	dis{
+		display:none;
+	}
 	.services-container {
 		grid-template-columns: repeat(1, 1fr) !important;
 	}
